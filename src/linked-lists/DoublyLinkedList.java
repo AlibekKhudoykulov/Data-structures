@@ -71,6 +71,29 @@ public class DoublyLinkedList<T> {
         size++;
     }
     
+    public void deleteAtHead() {
+        if (isEmpty())
+            return;
+
+        headNode = headNode.nextNode;
+        if(headNode == null)
+            tailNode = null;
+        else
+            headNode.prevNode = null;
+        size--;
+    }
+
+    public void deleteAtTail() {
+        if (isEmpty())
+            return;
+        tailNode = tailNode.prevNode;
+        if (tailNode == null)
+            headNode = null;
+        else
+            tailNode.nextNode = null;
+        size--;
+    }
+    
     //print list function
     public void printList() {
         if (isEmpty()) {
