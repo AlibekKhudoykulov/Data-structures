@@ -1,5 +1,5 @@
 public class DoublyLinkedList<T> {
-    
+
     //Node inner class for DLL
     public class Node {
         public T data;
@@ -40,7 +40,37 @@ public class DoublyLinkedList<T> {
     public int getSize() {
         return size;
     }
+    
+    //insert at start of the list
+    public void insertAtHead(T data) {
+        Node newNode = new Node();
+        newNode.data = data;
+        newNode.nextNode = this.headNode; //Linking newNode to head's nextNode
+        newNode.prevNode = null; //it will be inserted at start so prevNode will be null
+        if (!isEmpty())
+            headNode.prevNode = newNode;
+        else
+            tailNode = newNode;
+        this.headNode = newNode;
+        size++;
+    }
 
+    //insert at end of the list
+    public void insertAtEnd(T data) {
+        if (isEmpty()) { //if list is empty then insert at head
+            insertAtHead(data);
+            return;
+        }
+        //make a new node and assign it the value to be inserted
+        Node newNode = new Node();
+        newNode.data = data;
+        newNode.nextNode = null; //it will be inserted at end so nextNode will be null
+        newNode.prevNode = tailNode; //newNode comes after tailNode so its prevNode will be tailNode
+        tailNode.nextNode = newNode; //make newNode the nextNode of tailNode
+        tailNode = newNode; //update tailNode to be the newNode
+        size++;
+    }
+    
     //print list function
     public void printList() {
         if (isEmpty()) {
