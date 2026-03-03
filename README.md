@@ -22,8 +22,8 @@ A collection of Data Structures and Algorithms implementations written in **Java
 
 | Topic | Concepts | Status |
 |-------|----------|--------|
-| Arrays | Static arrays, Dynamic arrays, 2D arrays | 🔄 In Progress |
-| Linked Lists | Singly, Doubly, Circular | ⏳ Upcoming |
+| Arrays | Static arrays, Dynamic arrays, 2D arrays | ✅ Done |
+| Linked Lists | Singly, Doubly, Circular | 🔄 In Progress |
 | Stacks | Array-based, Linked List-based | ⏳ Upcoming |
 | Queues | Queue, Deque, Priority Queue | ⏳ Upcoming |
 | Trees | BST, AVL Tree, Binary Tree traversals | ⏳ Upcoming |
