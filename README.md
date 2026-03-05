@@ -24,10 +24,10 @@ A collection of Data Structures and Algorithms implementations written in **Java
 |-------|----------|--------|
 | Arrays | Static arrays, Dynamic arrays, 2D arrays | ✅ Done |
 | Linked Lists | Singly, Doubly, Circular | ✅ Done |
-| Stacks | Array-based, Linked List-based | 🔄 In Progress |
-| Queues | Queue, Deque, Priority Queue | ⏳ Upcoming |
+| Stacks | Array-based, Linked List-based | ✅ Done |
+| Queues | Queue, Deque, Priority Queue | ✅ Done |
 | Trees | BST, AVL Tree, Binary Tree traversals | ⏳ Upcoming |
-| Graphs | Adjacency List/Matrix, BFS, DFS | ⏳ Upcoming |
+| Graphs | Adjacency List/Matrix, BFS, DFS | 🔄 In Progress |
 | Sorting | Bubble, Merge, Quick, Insertion, Heap Sort | ⏳ Upcoming |
 | Searching | Linear Search, Binary Search | ⏳ Upcoming |
 
